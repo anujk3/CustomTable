@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6533BE8719BB86B400D08D79 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6533BE8619BB86B400D08D79 /* recipes.plist */; };
 		654A64C919BA423F00E0A07C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654A64C819BA423F00E0A07C /* Foundation.framework */; };
 		654A64CB19BA423F00E0A07C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654A64CA19BA423F00E0A07C /* CoreGraphics.framework */; };
 		654A64CD19BA423F00E0A07C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654A64CC19BA423F00E0A07C /* UIKit.framework */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6533BE8619BB86B400D08D79 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 		654A64C519BA423F00E0A07C /* CustomTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		654A64C819BA423F00E0A07C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		654A64CA19BA423F00E0A07C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -147,6 +149,7 @@
 		654A64CE19BA423F00E0A07C /* CustomTable */ = {
 			isa = PBXGroup;
 			children = (
+				6533BE8619BB86B400D08D79 /* recipes.plist */,
 				654A64FF19BB03B200E0A07C /* angry_birds_cake.jpg */,
 				654A650019BB03B200E0A07C /* egg_benedict.jpg */,
 				654A650119BB03B200E0A07C /* full_breakfast.jpg */,
@@ -288,6 +291,7 @@
 				654A651B19BB03B200E0A07C /* vegetable_curry.jpg in Resources */,
 				654A651A19BB03B200E0A07C /* thai_shrimp_cake.jpg in Resources */,
 				654A64FE19BB00A700E0A07C /* creme_brelee.jpg in Resources */,
+				6533BE8719BB86B400D08D79 /* recipes.plist in Resources */,
 				654A651C19BB03B200E0A07C /* white_chocolate_donut.jpg in Resources */,
 				654A651519BB03B200E0A07C /* instant_noodle_with_egg.jpg in Resources */,
 				654A651419BB03B200E0A07C /* hamburger.jpg in Resources */,
@@ -527,6 +531,7 @@
 				654A64F919BA423F00E0A07C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		654A64FA19BA423F00E0A07C /* Build configuration list for PBXNativeTarget "CustomTableTests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +540,7 @@
 				654A64FC19BA423F00E0A07C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
