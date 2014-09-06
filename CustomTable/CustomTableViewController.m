@@ -17,6 +17,7 @@
     NSArray *recipeNames;
     NSArray *recipeImages;
     NSArray *recipePrepTimes;
+    BOOL recipeChecked[16];
 }
 
 - (void)viewDidLoad
@@ -61,7 +62,39 @@
     cell.nameLabel.text = [recipeNames objectAtIndex:indexPath.row];
     cell.thumbnailImageView.image = [UIImage imageNamed:[recipeImages objectAtIndex:indexPath.row]];
     cell.prepTimeLabel.text = [recipePrepTimes objectAtIndex:indexPath.row];
+    
+    if(recipeChecked[indexPath.row]){
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }else{
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString* selectedRecipe = [recipeNames objectAtIndex:indexPath.row];
+    UIAlertView *messageAlert = [[UIAlertView alloc]
+                                 initWithTitle:@"Row Selected" message:selectedRecipe
+                                 delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    // Display Alert Message
+    [messageAlert show];
+
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+
+    if (recipeChecked[indexPath.row]) {
+        recipeChecked[indexPath.row] = NO;
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }else{
+        recipeChecked[indexPath.row] = YES;
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    
+
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+
 
 @end
