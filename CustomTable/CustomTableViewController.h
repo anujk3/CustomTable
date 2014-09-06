@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomTableViewController : UIViewController
+@interface CustomTableViewController : UITableViewController
 
 @end
