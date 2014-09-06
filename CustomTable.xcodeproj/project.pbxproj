@@ -21,6 +21,7 @@
 		654A64EA19BA423F00E0A07C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654A64CC19BA423F00E0A07C /* UIKit.framework */; };
 		654A64F219BA423F00E0A07C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 654A64F019BA423F00E0A07C /* InfoPlist.strings */; };
 		654A64F419BA423F00E0A07C /* CustomTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 654A64F319BA423F00E0A07C /* CustomTableTests.m */; };
+		654A64FE19BB00A700E0A07C /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654A64FD19BB00A700E0A07C /* creme_brelee.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		654A64EF19BA423F00E0A07C /* CustomTableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomTableTests-Info.plist"; sourceTree = "<group>"; };
 		654A64F119BA423F00E0A07C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		654A64F319BA423F00E0A07C /* CustomTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableTests.m; sourceTree = "<group>"; };
+		654A64FD19BB00A700E0A07C /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = creme_brelee.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		654A64CE19BA423F00E0A07C /* CustomTable */ = {
 			isa = PBXGroup;
 			children = (
+				654A64FD19BB00A700E0A07C /* creme_brelee.jpg */,
 				654A64D719BA423F00E0A07C /* CustomTableAppDelegate.h */,
 				654A64D819BA423F00E0A07C /* CustomTableAppDelegate.m */,
 				654A64DA19BA423F00E0A07C /* Main.storyboard */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				654A64E119BA423F00E0A07C /* Images.xcassets in Resources */,
+				654A64FE19BB00A700E0A07C /* creme_brelee.jpg in Resources */,
 				654A64D319BA423F00E0A07C /* InfoPlist.strings in Resources */,
 				654A64DC19BA423F00E0A07C /* Main.storyboard in Resources */,
 			);
