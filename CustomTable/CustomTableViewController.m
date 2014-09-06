@@ -7,6 +7,7 @@
 //
 
 #import "CustomTableViewController.h"
+#include "CustomTableCell.h"
 
 @interface CustomTableViewController ()
 
@@ -15,7 +16,7 @@
 @implementation CustomTableViewController{
     NSArray *recipeNames;
     NSArray *recipeImages;
-    
+    NSArray *recipePrepTimes;
 }
 
 - (void)viewDidLoad
@@ -27,6 +28,8 @@
     
     recipeImages = [NSArray arrayWithObjects:@"egg_benedict.jpg", @"mushroom_risotto.jpg", @"full_breakfast.jpg", @"hamburger.jpg", @"ham_and_egg_sandwich.jpg", @"creme_brelee.jpg", @"white_chocolate_donut.jpg", @"starbucks_coffee.jpg", @"vegetable_curry.jpg",
                     @"instant_noodle_with_egg.jpg", @"noodle_with_bbq_pork.jpg", @"japanese_noodle_with_pork.jpg", @"green_tea.jpg", @"thai_shrimp_cake.jpg", @"angry_birds_cake.jpg", @"ham_and_cheese_panini.jpg", nil];
+
+    recipePrepTimes = [NSArray arrayWithObjects:@"30 min", @"30 min", @"20 min", @"30 min", @"10 min", @"1 hour", @"45 min", @"5 min", @"30 min", @"8 min", @"20 min", @"20 min", @"5 min", @"1.5 hour", @"4 hours", @"10 min", nil];
     
     [self.tableView setContentInset:UIEdgeInsetsMake(20, self.tableView.contentInset.left,
                                                      self.tableView.contentInset.bottom, self.tableView.contentInset.right)];
@@ -48,15 +51,16 @@
 
     static NSString *CellIdentifier = @"CustomTableCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    CustomTableCell *cell = (CustomTableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+        cell = [[CustomTableCell alloc] initWithStyle:UITableViewCellStyleDefault
                                       reuseIdentifier:CellIdentifier];
     }
     
-    cell.textLabel.text = [recipeNames objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:[recipeImages objectAtIndex:indexPath.row]];
+    cell.nameLabel.text = [recipeNames objectAtIndex:indexPath.row];
+    cell.thumbnailImageView.image = [UIImage imageNamed:[recipeImages objectAtIndex:indexPath.row]];
+    cell.prepTimeLabel.text = [recipePrepTimes objectAtIndex:indexPath.row];
     return cell;
 }
 

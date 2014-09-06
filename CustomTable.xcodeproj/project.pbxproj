@@ -37,6 +37,7 @@
 		654A651A19BB03B200E0A07C /* thai_shrimp_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654A650B19BB03B200E0A07C /* thai_shrimp_cake.jpg */; };
 		654A651B19BB03B200E0A07C /* vegetable_curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654A650C19BB03B200E0A07C /* vegetable_curry.jpg */; };
 		654A651C19BB03B200E0A07C /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654A650D19BB03B200E0A07C /* white_chocolate_donut.jpg */; };
+		654A651F19BB075400E0A07C /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 654A651E19BB075400E0A07C /* CustomTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		654A650B19BB03B200E0A07C /* thai_shrimp_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thai_shrimp_cake.jpg; sourceTree = "<group>"; };
 		654A650C19BB03B200E0A07C /* vegetable_curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegetable_curry.jpg; sourceTree = "<group>"; };
 		654A650D19BB03B200E0A07C /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_chocolate_donut.jpg; sourceTree = "<group>"; };
+		654A651D19BB075400E0A07C /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
+		654A651E19BB075400E0A07C /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 				654A64D719BA423F00E0A07C /* CustomTableAppDelegate.h */,
 				654A64D819BA423F00E0A07C /* CustomTableAppDelegate.m */,
 				654A64DA19BA423F00E0A07C /* Main.storyboard */,
+				654A651D19BB075400E0A07C /* CustomTableCell.h */,
+				654A651E19BB075400E0A07C /* CustomTableCell.m */,
 				654A64DD19BA423F00E0A07C /* CustomTableViewController.h */,
 				654A64DE19BA423F00E0A07C /* CustomTableViewController.m */,
 				654A64E019BA423F00E0A07C /* Images.xcassets */,
@@ -317,6 +322,7 @@
 				654A64D919BA423F00E0A07C /* CustomTableAppDelegate.m in Sources */,
 				654A64DF19BA423F00E0A07C /* CustomTableViewController.m in Sources */,
 				654A64D519BA423F00E0A07C /* main.m in Sources */,
+				654A651F19BB075400E0A07C /* CustomTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
