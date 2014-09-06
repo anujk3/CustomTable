@@ -8,6 +8,7 @@
 
 #import "CustomTableViewController.h"
 #include "CustomTableCell.h"
+#include "RecipeDetailViewController.h"
 
 @interface CustomTableViewController ()
 
@@ -95,6 +96,14 @@
 //    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        RecipeDetailViewController *destViewController = segue.destinationViewController;
+        destViewController.recipeName = [recipeNames objectAtIndex:indexPath.row];
+        destViewController.recipePrepTimeString = [recipePrepTimes objectAtIndex:indexPath.row];
+    }
+}
 
 
 @end

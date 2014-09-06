@@ -43,7 +43,7 @@
                                     <outlet property="nameLabel" destination="jHL-B2-TK8" id="jtw-kG-gZy"/>
                                     <outlet property="prepTimeLabel" destination="WPk-ws-cvr" id="e5Q-8M-pUb"/>
                                     <outlet property="thumbnailImageView" destination="crN-qF-Muz" id="Sb7-cK-YXJ"/>
-                                    <segue destination="0gp-yt-JWw" kind="push" id="oxc-xS-FMz"/>
+                                    <segue destination="0gp-yt-JWw" kind="push" identifier="showRecipeDetail" id="oxc-xS-FMz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="683" y="99"/>
         </scene>
-        <!--View Controller-->
+        <!--Recipe Detail View Controller-->
         <scene sceneID="Btb-Pn-idl">
             <objects>
-                <viewController id="0gp-yt-JWw" sceneMemberID="viewController">
+                <viewController id="0gp-yt-JWw" customClass="RecipeDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mQm-Fz-37v"/>
                         <viewControllerLayoutGuide type="bottom" id="2jD-rW-tfG"/>
@@ -70,17 +70,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUX-ro-CEQ">
-                                <rect key="frame" x="137" y="271" width="46" height="25"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUX-ro-CEQ">
+                                <rect key="frame" x="20" y="271" width="280" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PrepTime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6W-57-3aw">
+                                <rect key="frame" x="20" y="314" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="WS9-rW-DDQ"/>
+                    <connections>
+                        <outlet property="recipeLabel" destination="cUX-ro-CEQ" id="Ztx-rh-WXw"/>
+                        <outlet property="recipePrepTime" destination="I6W-57-3aw" id="xtm-tk-PXD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjb-1Z-9qr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

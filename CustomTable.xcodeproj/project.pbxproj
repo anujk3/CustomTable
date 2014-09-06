@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6533BE8719BB86B400D08D79 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6533BE8619BB86B400D08D79 /* recipes.plist */; };
+		6533BE8A19BBB21800D08D79 /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6533BE8919BBB21800D08D79 /* RecipeDetailViewController.m */; };
 		654A64C919BA423F00E0A07C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654A64C819BA423F00E0A07C /* Foundation.framework */; };
 		654A64CB19BA423F00E0A07C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654A64CA19BA423F00E0A07C /* CoreGraphics.framework */; };
 		654A64CD19BA423F00E0A07C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654A64CC19BA423F00E0A07C /* UIKit.framework */; };
@@ -53,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		6533BE8619BB86B400D08D79 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
+		6533BE8819BBB21800D08D79 /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
+		6533BE8919BBB21800D08D79 /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
 		654A64C519BA423F00E0A07C /* CustomTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		654A64C819BA423F00E0A07C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		654A64CA19BA423F00E0A07C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -173,6 +176,8 @@
 				654A651E19BB075400E0A07C /* CustomTableCell.m */,
 				654A64DD19BA423F00E0A07C /* CustomTableViewController.h */,
 				654A64DE19BA423F00E0A07C /* CustomTableViewController.m */,
+				6533BE8819BBB21800D08D79 /* RecipeDetailViewController.h */,
+				6533BE8919BBB21800D08D79 /* RecipeDetailViewController.m */,
 				654A64E019BA423F00E0A07C /* Images.xcassets */,
 				654A64CF19BA423F00E0A07C /* Supporting Files */,
 			);
@@ -327,6 +332,7 @@
 				654A64DF19BA423F00E0A07C /* CustomTableViewController.m in Sources */,
 				654A64D519BA423F00E0A07C /* main.m in Sources */,
 				654A651F19BB075400E0A07C /* CustomTableCell.m in Sources */,
+				6533BE8A19BBB21800D08D79 /* RecipeDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
