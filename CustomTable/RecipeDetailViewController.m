@@ -28,14 +28,40 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.recipeLabel.text = self.recipeName;
-    self.recipePrepTime.text = self.recipePrepTimeString;
+    self.title = self.recipe.name;
+    self.prepTimeLabel.text = self.recipe.prepTime;
+    self.recipeImageView.image = [UIImage imageNamed:self.recipe.image];
+    
+//    NSMutableString *ingredientsText = [NSMutableString string];
+//    for(NSString *ingredient in self.recipe.ingredients){
+//        [ingredientsText appendFormat:@"%@\n", ingredient];
+//    }
+//    self.ingredientsTextView.text = ingredientsText;
+//    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [self.recipe.ingredients count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *CellIdentifier = @"RandomTableCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:CellIdentifier];
+    }
+    
+    cell.textLabel.text = [self.recipe.ingredients objectAtIndex:indexPath.row];
+    return cell;
 }
 
 /*

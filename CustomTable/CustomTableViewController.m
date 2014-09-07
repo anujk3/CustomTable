@@ -214,8 +214,8 @@
         
         Recipe *recipe = [recipes objectAtIndex:indexPath.row];
         
-        destViewController.recipeName = recipe.name;
-        destViewController.recipePrepTimeString = recipe.prepTime;
+        destViewController.recipe = recipe;
+//        destViewController.recipePrepTimeString = recipe.prepTime;
     }
 }
 

@@ -46,6 +46,7 @@
 		658AA1B519BC6882008AB744 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 658AA1B419BC6882008AB744 /* Recipe.m */; };
 		658AA1B819BC715E008AB744 /* photo-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 658AA1B619BC715D008AB744 /* photo-frame.png */; };
 		658AA1B919BC715E008AB744 /* photo-frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 658AA1B719BC715E008AB744 /* photo-frame@2x.png */; };
+		658AA1BC19BC865E008AB744 /* CreatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658AA1BB19BC865E008AB744 /* CreatedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,8 @@
 		658AA1B419BC6882008AB744 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
 		658AA1B619BC715D008AB744 /* photo-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame.png"; sourceTree = "<group>"; };
 		658AA1B719BC715E008AB744 /* photo-frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame@2x.png"; sourceTree = "<group>"; };
+		658AA1BA19BC865E008AB744 /* CreatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatedViewController.h; sourceTree = "<group>"; };
+		658AA1BB19BC865E008AB744 /* CreatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +203,8 @@
 				6533BE8919BBB21800D08D79 /* RecipeDetailViewController.m */,
 				6533BE8B19BBD3C100D08D79 /* AboutViewController.h */,
 				6533BE8C19BBD3C100D08D79 /* AboutViewController.m */,
+				658AA1BA19BC865E008AB744 /* CreatedViewController.h */,
+				658AA1BB19BC865E008AB744 /* CreatedViewController.m */,
 				654A64E019BA423F00E0A07C /* Images.xcassets */,
 				654A64CF19BA423F00E0A07C /* Supporting Files */,
 			);
@@ -355,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6533BE8D19BBD3C100D08D79 /* AboutViewController.m in Sources */,
+				658AA1BC19BC865E008AB744 /* CreatedViewController.m in Sources */,
 				658AA1B519BC6882008AB744 /* Recipe.m in Sources */,
 				654A64D919BA423F00E0A07C /* CustomTableAppDelegate.m in Sources */,
 				654A64DF19BA423F00E0A07C /* CustomTableViewController.m in Sources */,
