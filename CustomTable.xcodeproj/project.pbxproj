@@ -43,6 +43,9 @@
 		654A651F19BB075400E0A07C /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 654A651E19BB075400E0A07C /* CustomTableCell.m */; };
 		658AA1B119BBD785008AB744 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 658AA1AF19BBD785008AB744 /* about.jpg */; };
 		658AA1B219BBD785008AB744 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 658AA1B019BBD785008AB744 /* about.html */; };
+		658AA1B519BC6882008AB744 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 658AA1B419BC6882008AB744 /* Recipe.m */; };
+		658AA1B819BC715E008AB744 /* photo-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 658AA1B619BC715D008AB744 /* photo-frame.png */; };
+		658AA1B919BC715E008AB744 /* photo-frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 658AA1B719BC715E008AB744 /* photo-frame@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +103,10 @@
 		654A651E19BB075400E0A07C /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
 		658AA1AF19BBD785008AB744 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
 		658AA1B019BBD785008AB744 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		658AA1B319BC6881008AB744 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		658AA1B419BC6882008AB744 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		658AA1B619BC715D008AB744 /* photo-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame.png"; sourceTree = "<group>"; };
+		658AA1B719BC715E008AB744 /* photo-frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +166,8 @@
 		654A64CE19BA423F00E0A07C /* CustomTable */ = {
 			isa = PBXGroup;
 			children = (
+				658AA1B619BC715D008AB744 /* photo-frame.png */,
+				658AA1B719BC715E008AB744 /* photo-frame@2x.png */,
 				658AA1AF19BBD785008AB744 /* about.jpg */,
 				658AA1B019BBD785008AB744 /* about.html */,
 				6533BE8619BB86B400D08D79 /* recipes.plist */,
@@ -178,6 +187,8 @@
 				654A650C19BB03B200E0A07C /* vegetable_curry.jpg */,
 				654A650D19BB03B200E0A07C /* white_chocolate_donut.jpg */,
 				654A64FD19BB00A700E0A07C /* creme_brelee.jpg */,
+				658AA1B319BC6881008AB744 /* Recipe.h */,
+				658AA1B419BC6882008AB744 /* Recipe.m */,
 				654A64D719BA423F00E0A07C /* CustomTableAppDelegate.h */,
 				654A64D819BA423F00E0A07C /* CustomTableAppDelegate.m */,
 				654A64DA19BA423F00E0A07C /* Main.storyboard */,
@@ -310,11 +321,13 @@
 				6533BE8719BB86B400D08D79 /* recipes.plist in Resources */,
 				654A651C19BB03B200E0A07C /* white_chocolate_donut.jpg in Resources */,
 				658AA1B219BBD785008AB744 /* about.html in Resources */,
+				658AA1B919BC715E008AB744 /* photo-frame@2x.png in Resources */,
 				654A651519BB03B200E0A07C /* instant_noodle_with_egg.jpg in Resources */,
 				654A651419BB03B200E0A07C /* hamburger.jpg in Resources */,
 				654A651819BB03B200E0A07C /* noodle_with_bbq_pork.jpg in Resources */,
 				654A64D319BA423F00E0A07C /* InfoPlist.strings in Resources */,
 				654A64DC19BA423F00E0A07C /* Main.storyboard in Resources */,
+				658AA1B819BC715E008AB744 /* photo-frame.png in Resources */,
 				654A651219BB03B200E0A07C /* ham_and_cheese_panini.jpg in Resources */,
 				654A651119BB03B200E0A07C /* green_tea.jpg in Resources */,
 				654A651719BB03B200E0A07C /* mushroom_risotto.jpg in Resources */,
@@ -342,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6533BE8D19BBD3C100D08D79 /* AboutViewController.m in Sources */,
+				658AA1B519BC6882008AB744 /* Recipe.m in Sources */,
 				654A64D919BA423F00E0A07C /* CustomTableAppDelegate.m in Sources */,
 				654A64DF19BA423F00E0A07C /* CustomTableViewController.m in Sources */,
 				654A64D519BA423F00E0A07C /* main.m in Sources */,
